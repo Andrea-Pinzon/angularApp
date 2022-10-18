@@ -4,5 +4,13 @@
     <app-card [dataEntrante]="card" *ngFor="let card of ArregloTarjetas"></app-card>
 </div>
 
+<h3 class="bg-danger text-success">Hola mundo este es <span class="bg-dark">{{nombre}}</span></h3>
+<p class="text-primary">La suma es 2 + 2 = <span class="bg-dark">{{2 + 2}}</span></p>
+<p class="text-primary">La suma es 2 + 5 = <span class="bg-dark">{{getSuma(2,5)}}</span> (Paso de parametros de forma directa.)</p>
+<br>
+<input type="text" class="form-control" [placeholder]="textPlaceHolder" [disabled]="error">
+<br><br>
+<img [src]="img" alt="img" width="200px" height="200px">
+
 <app-sliderbar></app-sliderbar>
 <!-- <router-outlet></router-outlet> -->

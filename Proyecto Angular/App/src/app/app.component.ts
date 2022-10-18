@@ -13,6 +13,31 @@ interface Tarjeta{
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  nombre= "Vito";
+  //solo es valido un constructor en todo el archivo?
+
+  // constructor(){
+  //   setInterval(() => this.nombre= 'Martin', 5000);
+  // }
+
+  getSuma(num: number, num2: number){
+    return num+num2;
+  }
+
+  textPlaceHolder= "Escriba su nombre aqui:";
+  error= true;
+  constructor(){
+    setInterval(() => this.error = false, 5000);
+  }
+
+  img ="https://i.imgur.com/urMoyGG.jpg";
+
+  texto="Este es un texto de prueba.";
+
+
+
+
+//componente card
   title = 'Mi App* de Angular';
   public ArregloTarjetas: Tarjeta[]=[];
 
