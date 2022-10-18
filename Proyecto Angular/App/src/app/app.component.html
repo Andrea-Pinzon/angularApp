@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <div class="grid">
-    <app-card *ngFor="let card of ArregloTarjetas"></app-card>
+    <app-card [dataEntrante]="card" *ngFor="let card of ArregloTarjetas"></app-card>
 </div>
 
 <app-sliderbar></app-sliderbar>

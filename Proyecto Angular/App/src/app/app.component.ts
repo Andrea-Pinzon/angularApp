@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 interface Tarjeta{
   titulo:string;
   subtitulo:string;
-  numero?: number;
+  image:string;
+  texto:string;
 }
 
 @Component({
@@ -16,12 +17,12 @@ export class AppComponent implements OnInit{
   public ArregloTarjetas: Tarjeta[]=[];
 
   ngOnInit(): void {
-
     this.ArregloTarjetas = [
-      {titulo:'Video 1', subtitulo: "Subtitulo Video 1", numero:5},
-      {titulo:'Video 2', subtitulo: "Subtitulo Video 2"},
-      {titulo:'Video 3', subtitulo: "Subtitulo Video 3", numero:7},
-      {titulo:'Video 4', subtitulo: "Subtitulo Video 4", numero:8}
+      {titulo:'Video 1', subtitulo: "Subtitulo Video 1" ,image:"https://i.imgur.com/2WLjDDX.png", texto: "Texto 1 por aqui Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, reiciendis."},
+      {titulo:'Video 2', subtitulo: "Subtitulo Video 2" ,image:"https://i.imgur.com/lnuEsnX.png", texto: "Texto 2 por aqui"},
+      {titulo:'Video 3', subtitulo: "Subtitulo Video 3" ,image:"https://i.imgur.com/F07o6bR.png", texto: "Texto 3 por aqui"},
+      {titulo:'Video 4', subtitulo: "Subtitulo Video 4" ,image:"https://i.imgur.com/5EasX67.png", texto: "Texto 4 por aqui"},
+      {titulo:'Video 5', subtitulo: "Subtitulo Video 5" ,image:"https://i.imgur.com/d7aKm9K.png", texto: "Texto 5 por aqui"}
     ]
   }
 }
