@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    background-color: cyan;
+    border-bottom: 1px solid black;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu li {
+    padding: 5px;
+    list-style: none;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu li:hover {
+    background-color: purple;
+}
+
+.logo {
+    width: 2rem;
+}
+
+
+p {
+    padding: 50px;
+    background-color: pink;
+}
