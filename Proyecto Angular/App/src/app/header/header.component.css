@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    background-color: cyan;
+    padding: 0 10px;
     border-bottom: 1px solid black;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .menu li:hover {
-    background-color: purple;
+    background-color: #eee;
 }
 
 .logo {

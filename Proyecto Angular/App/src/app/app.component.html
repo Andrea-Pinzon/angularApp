@@ -1,6 +1,6 @@
 <app-header></app-header>
-
-<div class="grid">
+<app-directivas></app-directivas>
+<!-- <div class="grid">
     <app-card [dataEntrante]="card" *ngFor="let card of ArregloTarjetas"></app-card>
 </div>
 
@@ -11,6 +11,20 @@
 <input type="text" class="form-control" [placeholder]="textPlaceHolder" [disabled]="error">
 <br><br>
 <img [src]="img" alt="img" width="200px" height="200px">
+<br><br>
+
+<div class="container">
+    <p>{{texto}}</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dicta eligendi odit eum odio aut, facilis voluptatem adipisci rerum nesciunt quis deserunt reprehenderit expedita corporis cum, magnam vitae ducimus fugit!</p>
+    <button class="btn btn-primary" (click)="cambiartexto()">Hacer Click!</button>
+</div>
+
+<div class="container">
+    <input type="text" class="form-control" placeholder="Escriba algo..." [(ngModel)]="texto2">
+    <p>{{texto2}}</p>
+</div>
+
+<br><br> -->
 
 <app-sliderbar></app-sliderbar>
 <!-- <router-outlet></router-outlet> -->

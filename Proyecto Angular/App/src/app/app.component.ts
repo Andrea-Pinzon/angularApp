@@ -33,7 +33,12 @@ export class AppComponent implements OnInit{
   img ="https://i.imgur.com/urMoyGG.jpg";
 
   texto="Este es un texto de prueba.";
+  cambiartexto():void{
+    this.texto="El texto cambio."
+  }
 
+  texto2="";
+  
 
 
 
